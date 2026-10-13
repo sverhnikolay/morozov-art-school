@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "buildCommand": "node scripts/unpack.cjs",
+  "outputDirectory": "public"
+}
