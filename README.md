@@ -1,16 +1,10 @@
 # Художественная школа Сергея Морозова
 
-Статическая сборка лендинга для Vercel. Исходная WordPress-копия остаётся в `../theme-source` и `../public`.
-
-## Локальная сборка
-
-```powershell
-node .\build-static.mjs
-```
+Статическая сборка лендинга для Vercel. Графические ресурсы хранятся в `assets/` небольшими частями и при сборке распаковываются в `public/`.
 
 ## Заявки
 
-Vercel Function `api/lead.js` передаёт оформленные заявки в Telegram. В настройках Vercel добавьте переменные окружения для Production, Preview и Development:
+Vercel Function `api/lead.js` передаёт оформленные заявки в Telegram. В переменных окружения Vercel должны быть заданы:
 
 - `TELEGRAM_BOT_TOKEN` — токен бота;
 - `TELEGRAM_CHAT_ID` — идентификатор чата администратора.
