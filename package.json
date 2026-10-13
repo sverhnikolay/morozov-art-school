@@ -1,0 +1,8 @@
+{
+  "name": "morozov-art-school",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/unpack.cjs"
+  }
+}
